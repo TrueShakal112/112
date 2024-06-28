@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Hp" sid="417035920552307" static="0" type="number">9</variable>
+        <variable constant="0" name="FishCount" sid="713707668685006" static="0" type="number">0</variable>
+        <event-block sid="974974901866633">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="328852519485199" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="624284213756782" type="Sprite3">
+                    <param id="0" name="Y">240</param>
+                </action>
+                <action id="0" name="Play" sid="417573891586357" type="Audio">
+                    <param id="0" name="Audio file">negromkiy-korotkiy-klik</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">123</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="995366462144429" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="917498819010841" type="System">
+                    <param id="0" name="Layout">Lvl1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

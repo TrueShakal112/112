@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2i63j24ut2vr5</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="tile">
+            <object-type name="FishCountpng" sid="495448203054995">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба1.png" />
+            </object-type>
+            <object-type name="Block1" sid="737821835028543">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="521606066977350">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Ученик\Downloads\312\images\flor.png" />
+            </object-type>
+        </object-folder>
+        <object-type name="Cat" sid="514555506512952">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Hp" sid="182985366768012" type="number" />
+                <instance-variable name="SexBomba" sid="111384235540777" type="number" />
+                <instance-variable name="FishCountT" sid="287391018104786" type="number" />
+                <instance-variable name="Zoom" sid="422212431067676" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="955584137874275">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation-folder name="New folder" />
+                <animation framecount="3" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="425916839857942" speed="5">
+                    <frame duration="1" hotspotX="0.511364" hotspotY="0.512821" original-source="C:\Users\Ученик\Downloads\image (2).png">
+                        <image-point name="Imagepoint 1" x="0.511364" y="-1.82051" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.511364" hotspotY="0.512821" original-source="C:\Users\Ученик\Downloads\image (3).png" />
+                    <frame duration="1" hotspotX="0.511364" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image (1).png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0.0128205" />
+                            <point x="1" y="1" />
+                            <point x="0.0113636" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="591591376794321" speed="5">
+                    <frame duration="1" hotspotX="0.511364" hotspotY="0.512821" original-source="C:\Users\Ученик\Downloads\image (2).png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="478668295748294" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image (4).png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image (5).png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.988372" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image (7).png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\Ученик\Downloads\image (6).png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="267232209154928" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="E:\112\картинки\image (23).png">
+                        <collision-poly>
+                            <point x="0.559524" y="0.456311" />
+                            <point x="0.5" y="0.0291262" />
+                            <point x="0.904762" y="0.495146" />
+                            <point x="0.702381" y="0.757282" />
+                            <point x="0.5" y="0.864078" />
+                            <point x="0.0357143" y="0.970874" />
+                            <point x="0.130952" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Клавиатура" sid="814678574251326">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Camera" sid="356800220050516">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Прокрутитьдо" sid="284472245920914">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Fish" sid="172892199032705">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492860266356333" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба221.png">
+                        <collision-poly>
+                            <point x="0.2575" y="0.2575" />
+                            <point x="0.5" y="0.245" />
+                            <point x="0.65" y="0.35" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.7175" y="0.7175" />
+                            <point x="0.5" y="0.84" />
+                            <point x="0.375" y="0.625" />
+                            <point x="0.3425" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба221.png">
+                        <collision-poly>
+                            <point x="0.2575" y="0.2575" />
+                            <point x="0.5" y="0.245" />
+                            <point x="0.65" y="0.35" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.7175" y="0.7175" />
+                            <point x="0.5" y="0.84" />
+                            <point x="0.375" y="0.625" />
+                            <point x="0.3425" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба4.png">
+                        <collision-poly>
+                            <point x="0.2575" y="0.2575" />
+                            <point x="0.5" y="0.245" />
+                            <point x="0.65" y="0.35" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.7175" y="0.7175" />
+                            <point x="0.5" y="0.84" />
+                            <point x="0.375" y="0.625" />
+                            <point x="0.3425" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба11.png">
+                        <collision-poly>
+                            <point x="0.315" y="0.315" />
+                            <point x="0.5" y="0.2825" />
+                            <point x="0.81" y="0.19" />
+                            <point x="0.6525" y="0.6525" />
+                            <point x="0.5" y="0.785" />
+                            <point x="0.1575" y="0.8425" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба22.png">
+                        <collision-poly>
+                            <point x="0.35" y="0.35" />
+                            <point x="0.5" y="0.245" />
+                            <point x="0.7425" y="0.2575" />
+                            <point x="0.6575" y="0.5" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.5" y="0.8375" />
+                            <point x="0.2825" y="0.7175" />
+                            <point x="0.35" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба.png">
+                        <collision-poly>
+                            <point x="0.465" y="0.465" />
+                            <point x="0.5" y="0.055" />
+                            <point x="0.5325" y="0.4675" />
+                            <point x="0.5325" y="0.5325" />
+                            <point x="0.5" y="0.94" />
+                            <point x="0.465" y="0.535" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextFish" sid="164152619655221">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Fishpng" sid="464508934907578">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="490653989436606" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Desktop\photoshop\рыба1.png">
+                        <collision-poly>
+                            <point x="0.19" y="0.19" />
+                            <point x="0.5" y="0.2825" />
+                            <point x="0.685" y="0.315" />
+                            <point x="0.8425" y="0.8425" />
+                            <point x="0.5" y="0.785" />
+                            <point x="0.3475" y="0.6525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground4" sid="392593994229888">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="170587829347216">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Ученик\Downloads\312\images\flor.png" />
+        </object-type>
+        <object-type name="Pixel" sid="863712922687531">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902186219999409" speed="12">
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.502513" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bomb" sid="398501877230217">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="697978968778201">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="835255425914645">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428898710861428" speed="5">
+                    <frame duration="1" hotspotX="0.513158" hotspotY="0.5" original-source="C:\Users\Admin-PC\Downloads\Telegram Desktop\image (28).png">
+                        <collision-poly>
+                            <point x="0.5" y="0.163399" />
+                            <point x="0.710526" y="0.215686" />
+                            <point x="0.95614" y="0.496732" />
+                            <point x="0.850877" y="0.888889" />
+                            <point x="0.5" y="0.993464" />
+                            <point x="0.149123" y="0.888889" />
+                            <point x="0.0438596" y="0.496732" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Flower" sid="127948571929338">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Sitting" pingpong="0" repeatcount="1" repeatto="0" sid="225062195896568" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Downloads\Telegram Desktop\image (33).png">
+                        <collision-poly>
+                            <point x="0.125" y="0.181818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.181818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.8125" y="0.727273" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.727273" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Standing" pingpong="0" repeatcount="1" repeatto="0" sid="596229390206666" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Downloads\Telegram Desktop\image (34).png">
+                        <collision-poly>
+                            <point x="0.0666667" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.933333" y="0.0625" />
+                            <point x="0.8" y="0.5" />
+                            <point x="0.866667" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.875" />
+                            <point x="0.2" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="510750836701368">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Fade" sid="278224814294162">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Admin-PC\Desktop\photoshop\шерсть4.png" />
+        </object-type>
+        <object-type name="Audio" sid="742690141944220">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Text" sid="145567329512261">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mob1" sid="119833087906410">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="991407841650408">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="533383814080439">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="300961623736358" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\112\картинки\image (31).png" />
+                </animation>
+                <animation framecount="2" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="931039613833034" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image (1).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ship" sid="707088042798638">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293902268387333" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image (2).png">
+                        <collision-poly>
+                            <point x="0.384458" y="0.29375" />
+                            <point x="0.5" y="0" />
+                            <point x="0.615542" y="0.29375" />
+                            <point x="0.768916" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.231084" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="202171189267695">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\image (3).png" />
+        </object-type>
+        <object-type name="Sprite" sid="724501052767184">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126631284595839" speed="5">
+                    <frame duration="1" hotspotX="0.500994" hotspotY="0.501241" original-source="C:\Users\Ученик\Downloads\image (4).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="648449798454095">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\image (4).png" />
+        </object-type>
+        <object-type name="Text2" sid="795874145433113">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="424841493188068">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="395334761503759">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\112\картинки\Telegram Desktop\photo_2024-06-21_19-40-08.jpg" />
+        </object-type>
+        <object-type name="Oblako" sid="536103626828539">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="117739524477349">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565221757089452" speed="5">
+                    <frame duration="1" hotspotX="0.501597" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image (5).png">
+                        <collision-poly>
+                            <point x="0.514377" y="0" />
+                            <point x="0.996805" y="0.0151515" />
+                            <point x="1" y="1" />
+                            <point x="0.498403" y="1" />
+                            <point x="0.0127796" y="0.939394" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="WCS" pingpong="0" repeatcount="1" repeatto="0" sid="125869103806758" speed="5">
+                    <frame duration="1" hotspotX="0.501597" hotspotY="0.5" original-source="D:\112\картинки\oblako.png">
+                        <collision-poly>
+                            <point x="0.0798722" y="0.378788" />
+                            <point x="0.498403" y="0.0606061" />
+                            <point x="0.894569" y="0.5" />
+                            <point x="0.920128" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.498403" y="1" />
+                            <point x="0.0127796" y="0.939394" />
+                            <point x="0.0383387" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501597" hotspotY="0.5" original-source="D:\112\картинки\oblak121o.png" />
+                    <frame duration="1" hotspotX="0.501597" hotspotY="0.5" original-source="D:\112\картинки\oblak12o.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont2" sid="723346969636198">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Ученик\Downloads\image (6).png" />
+        </object-type>
+        <object-type name="SpriteFont3" sid="467970212385357">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Ученик\Downloads\image (6).png" />
+        </object-type>
+        <object-type name="TiledBackground6" sid="228997316049271">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground7" sid="750331310872314">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\image (2).png" />
+        </object-type>
+        <object-type name="TiledBackground8" sid="234925657477691">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\msg5547067212-107440.jpg" />
+        </object-type>
+        <object-type name="Sprite2" sid="852739182624874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="330086874474404" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500504" original-source="C:\Users\Ученик\Downloads\image (14).png">
+                        <collision-poly>
+                            <point x="0.293814" y="0.0574018" />
+                            <point x="0.5" y="0.00100705" />
+                            <point x="0.706186" y="0.0574018" />
+                            <point x="0.994845" y="0.499496" />
+                            <point x="0.706186" y="0.942598" />
+                            <point x="0.5" y="0.998993" />
+                            <point x="0.252577" y="0.950655" />
+                            <point x="0.00515464" y="0.499496" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground9" sid="639568118881445">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\msg5547067212-107448.jpg" />
+        </object-type>
+        <object-type name="Sprite3" sid="126984885593855">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="496540303169507" speed="5">
+                    <frame duration="1" hotspotX="0.490099" hotspotY="0.480519" original-source="D:\112\картинки\start.png">
+                        <collision-poly>
+                            <point x="0.0346535" y="0.038961" />
+                            <point x="0.945545" y="0.038961" />
+                            <point x="0.955446" y="0.480519" />
+                            <point x="0.933168" y="0.857143" />
+                            <point x="0.490099" y="0.831169" />
+                            <point x="0.029703" y="0.948052" />
+                            <point x="0.00495048" y="0.480519" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="869274224423463">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Sprite4" sid="714783386946581">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566848002044327" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500503" original-source="C:\Users\Ученик\Downloads\image (15).png">
+                        <collision-poly>
+                            <point x="0.298969" y="0.0582915" />
+                            <point x="0.5" y="0.00100503" />
+                            <point x="0.701031" y="0.0582915" />
+                            <point x="0.994845" y="0.499497" />
+                            <point x="0.742268" y="0.949749" />
+                            <point x="0.5" y="0.998995" />
+                            <point x="0.298969" y="0.941709" />
+                            <point x="0.00515464" y="0.499497" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground10" sid="282965286481466">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\msg5547067212-107440.jpg" />
+        </object-type>
+        <object-type name="TiledBackground12" sid="598054049272056">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\photo1719300472.jpeg" />
+        </object-type>
+        <object-type name="TiledBackground13" sid="683517605795181">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\photo1719300472.jpeg" />
+        </object-type>
+        <object-type name="Sprite5" sid="777158570015043">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574963256161089" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image (17).png">
+                        <collision-poly>
+                            <point x="0.0806452" y="0.681818" />
+                            <point x="0.5" y="0.545455" />
+                            <point x="0.924731" y="0.636364" />
+                            <point x="0.897849" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0.204301" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="733774799108396">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="820039435613579" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="C:\Users\Ученик\Downloads\image (16).png">
+                        <collision-poly>
+                            <point x="0.140351" y="0.695652" />
+                            <point x="0.5" y="0.0434783" />
+                            <point x="0.868421" y="0.652174" />
+                            <point x="0.815789" y="0.478261" />
+                            <point x="0.5" y="1" />
+                            <point x="0.333333" y="0.478261" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground15" sid="154887483489014">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="661531806833285">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Particles2" sid="294865796736514">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Fade" sid="838741885525317">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\112\картинки\шерсть4.png" />
+        </object-type>
+        <object-type name="Sprite8" sid="224268571953864">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="498841406271789">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="590815209348552">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925591679086420" speed="5">
+                    <frame duration="1" hotspotX="0.451098" hotspotY="0.615804" original-source="C:\Users\Admin-PC\Desktop\photoshop\sexbomba.png">
+                        <collision-poly>
+                            <point x="0.157685" y="0.215259" />
+                            <point x="0.451098" y="0.149864" />
+                            <point x="0.612774" y="0.395095" />
+                            <point x="0.786427" y="0.615804" />
+                            <point x="0.654691" y="0.893733" />
+                            <point x="0.279441" y="0.850136" />
+                            <point x="0.141717" y="0.615804" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground11" sid="828951314352462">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\image (28).png" />
+        </object-type>
+        <object-type name="TiledBackground16" sid="506197879881126">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\3241.png" />
+        </object-type>
+        <object-type name="Sprite9" sid="576363847744410">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139526153616277" speed="8">
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.504065" original-source="D:\112\картинки\ан2.png" />
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.504065" original-source="D:\112\картинки\ан3.png" />
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.504065" original-source="D:\112\картинки\ан4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground17" sid="433798095892755">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\113241.png" />
+        </object-type>
+        <object-type name="TiledBackground18" sid="476554892419083">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\up.png" />
+        </object-type>
+        <object-type name="TiledBackground19" sid="498855312131596">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\jump.png" />
+        </object-type>
+        <object-type name="TiledBackground20" sid="464858580571128">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite12" sid="912573387459123">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="619001362685833" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground21" sid="868411143194943">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\image (6).png" />
+        </object-type>
+        <object-type name="TiledBackground22" sid="252325211139597">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\left.png" />
+        </object-type>
+        <object-type name="TiledBackground23" sid="588299316220578">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\right.png" />
+        </object-type>
+        <object-type name="TiledBackground24" sid="232643152758175">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\image (5).png" />
+        </object-type>
+        <object-type name="Arrow" sid="846935292355099">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="679141626050792">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856305259795357" speed="5">
+                    <frame duration="1" hotspotX="0.502538" hotspotY="0.502538" original-source="C:\Users\Ученик\Downloads\image (7).png">
+                        <collision-poly>
+                            <point x="0.446701" y="0.446701" />
+                            <point x="0.497462" y="0.461929" />
+                            <point x="0.553299" y="0.446701" />
+                            <point x="0.989848" y="0.497462" />
+                            <point x="0.517766" y="0.517766" />
+                            <point x="0.497462" y="0.532995" />
+                            <point x="0.482233" y="0.517766" />
+                            <point x="0.0812183" y="0.497462" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="391976238569576">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667112937588043" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ученик\Downloads\image (8).png">
+                        <collision-poly>
+                            <point x="0.479592" y="0.479592" />
+                            <point x="0.5" y="0.469388" />
+                            <point x="0.520408" y="0.479592" />
+                            <point x="0.923469" y="0.5" />
+                            <point x="0.55102" y="0.55102" />
+                            <point x="0.5" y="0.535714" />
+                            <point x="0.44898" y="0.55102" />
+                            <point x="0.0102041" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground25" sid="471947059442871">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\image (9).png" />
+        </object-type>
+        <object-type name="TiledBackground26" sid="160748433847473">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite13" sid="427205184362102">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="is_jump" sid="273549437949753" type="boolean" />
+                <instance-variable name="BossHp" sid="398139720063658" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="737313558375264">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479145002782110" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\112\картинки\image (9).png">
+                        <collision-poly>
+                            <point x="0.147541" y="0.130435" />
+                            <point x="0.491803" y="0.115942" />
+                            <point x="0.786885" y="0.188406" />
+                            <point x="0.983607" y="0.492754" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0163934" y="0.492754" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="132775173189063" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin-PC\Downloads\Telegram Desktop\image (39).png">
+                        <image-point name="Imagepoint 1" x="0.467213" y="0.226087" />
+                        <image-point name="Imagepoint 2" x="0.486885" y="0.469565" />
+                        <image-point name="Imagepoint 3" x="0.454098" y="0.797101" />
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="114111895940583" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.507246" original-source="E:\112\картинки\j-ump.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.488525" y="0.992754" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.507246" original-source="E:\112\картинки\Ju-mp.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Tired" pingpong="0" repeatcount="1" repeatto="0" sid="998106437998520" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.507246" original-source="C:\Users\Ученик\Downloads\image (9).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground27" sid="783523374228161">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite15" sid="726738792053700">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234995713220606" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500503" original-source="D:\112\картинки\orangeportal.png">
+                        <collision-poly>
+                            <point x="0.298969" y="0.0582915" />
+                            <point x="0.5" y="0.00100503" />
+                            <point x="0.701031" y="0.0582915" />
+                            <point x="0.994845" y="0.499497" />
+                            <point x="0.742268" y="0.949749" />
+                            <point x="0.5" y="0.998995" />
+                            <point x="0.298969" y="0.941709" />
+                            <point x="0.00515464" y="0.499497" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="690129219508237">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Pos" sid="159172158774131" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="537999228062366">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="123" repeatto="0" sid="847443200571146" speed="12">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\112\картинки\image (2).png">
+                        <collision-poly>
+                            <point x="0.384458" y="0.29375" />
+                            <point x="0.5" y="0" />
+                            <point x="0.615542" y="0.29375" />
+                            <point x="0.768916" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.231084" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.46875" hotspotY="0.5625" original-source="D:\112\Animations\Sprite16\Default\Без имени-1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.70625" y="0.384458" />
+                            <point x="1" y="0.5" />
+                            <point x="0.70625" y="0.615542" />
+                            <point x="0.5" y="0.768916" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.231084" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.46875" hotspotY="0.5625" original-source="D:\112\Animations\Sprite16\Default\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.615542" y="0.70625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.384458" y="0.70625" />
+                            <point x="0.231084" y="0.5" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.768916" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.46875" hotspotY="0.5625" original-source="D:\112\Animations\Sprite16\Default\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.29375" y="0.615542" />
+                            <point x="0" y="0.5" />
+                            <point x="0.29375" y="0.384458" />
+                            <point x="0.5" y="0.231084" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.768916" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.46875" hotspotY="0.5625" original-source="D:\112\Animations\Sprite16\Default\4.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Rotating" pingpong="0" repeatcount="1" repeatto="0" sid="277872559302375" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground28" sid="699355591080273">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite17" sid="606660882726120">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="594422830501955">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="654089551695385" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\112\Animations\Mob1\Walk\001.png">
+                        <collision-poly>
+                            <point x="0.1" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9" y="0.1" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.288889" y="1" />
+                            <point x="0.0111111" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="-2.62222" hotspotY="-1.91111" original-source="D:\112\Animations\Mob1\Walk\000.png">
+                        <collision-poly>
+                            <point x="0.111111" y="0.111111" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9" y="0.1" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground31" sid="504602471982095">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ученик\Downloads\image (5).png" />
+        </object-type>
+        <object-type name="Sprite18" sid="337645224135313">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="588135960926497">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="471519011469116" speed="5">
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.511628" original-source="C:\Users\Ученик\Downloads\паша лох.png">
+                        <image-point name="Imagepoint 1" x="0.506849" y="0.488372" />
+                        <collision-poly>
+                            <point x="0.177989" y="0.498861" />
+                            <point x="0.463315" y="0.100228" />
+                            <point x="0.5" y="0.0888383" />
+                            <point x="0.0896739" y="0.849658" />
+                            <point x="0.00815219" y="0.498861" />
+                            <point x="0.13587" y="0.22779" />
+                            <point x="0.5" y="0.0136674" />
+                            <point x="0.922554" y="0.129841" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="390572842783645">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713018350123376" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.972" y="0.444" />
+                        <image-point name="Imagepoint 2" x="0.788" y="0.452" />
+                        <image-point name="Imagepoint 3" x="0.54" y="0.384" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="128215841340796">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="Sprite20" sid="493116268195636">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339214852148288" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground34" sid="180128667823764">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground35" sid="467885783564624">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground36" sid="767775267515077">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground37" sid="483288622394669">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite21" sid="330333765087089">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="729590306450503" speed="0">
+                    <frame duration="1" hotspotX="0.485" hotspotY="0.482143" original-source="D:\112\картинки\21.png" />
+                    <frame duration="1" hotspotX="0.478333" hotspotY="0.4375" original-source="D:\112\картинки\18.png" />
+                    <frame duration="1" hotspotX="0.503333" hotspotY="0.455357" original-source="D:\112\картинки\15.png" />
+                    <frame duration="1" hotspotX="0.501667" hotspotY="0.473214" original-source="D:\112\картинки\цйв.png" />
+                    <frame duration="1" hotspotX="0.513333" hotspotY="0.455357" original-source="D:\112\картинки\gr.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground38" sid="935232171577764">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\21.png" />
+        </object-type>
+        <object-type name="TiledBackground39" sid="678022915438201">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\15.png" />
+        </object-type>
+        <object-type name="TiledBackground40" sid="764962347737380">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\15.png" />
+        </object-type>
+        <object-type name="TiledBackground41" sid="235738571448112">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\gr.png" />
+        </object-type>
+        <object-type name="TiledBackground42" sid="677438083658143">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\112\картинки\цйв.png" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Lvl1.xml</layout>
+        <layout>Lvl2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Лист событий 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Клавиатура" uid="3" />
+        <global-instance type="Audio" uid="15">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="5" />
+    </global-instances>
+    <sounds-folder>
+        <file name="kot_-_myaukane--online-audio-convert.com.m4a" />
+        <file name="kot_-_myaukane--online-audio-convert.com.ogg" />
+        <file name="cat-screams-and-disappear--online-audio-convert.com.m4a" />
+        <file name="cat-screams-and-disappear--online-audio-convert.com.ogg" />
+        <file name="cat-screams-and-disappear--online-audio-convert.com (1).m4a" />
+        <file name="cat-screams-and-disappear--online-audio-convert.com (1).ogg" />
+        <file name="negromkiy-korotkiy-klik.m4a" />
+        <file name="negromkiy-korotkiy-klik.ogg" />
+        <file name="d3ef10c234e13e1.mp3--online-audio-convert.com.m4a" />
+        <file name="d3ef10c234e13e1.mp3--online-audio-convert.com.ogg" />
+        <file name="2--online-audio-convert.com.m4a" />
+        <file name="2--online-audio-convert.com.ogg" />
+        <file name="3--online-audio-convert.com.m4a" />
+        <file name="3--online-audio-convert.com.ogg" />
+        <file name="48bb90af8e1e401 (1)--online-audio-convert.com.m4a" />
+        <file name="48bb90af8e1e401 (1)--online-audio-convert.com.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

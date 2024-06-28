@@ -1,0 +1,27 @@
+{
+	"name": "Flor",
+	"plugin-id": "TiledBg",
+	"sid": 673236183972296,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 339064543970859
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 199,
+		"height": 108,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3925212,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
